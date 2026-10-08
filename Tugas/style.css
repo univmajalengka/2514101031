@@ -1,0 +1,506 @@
+
+/* ================= DASAR ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav {
+    width: 100%;
+    background-color: #0b6e4f;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.logo span {
+    color: #ffd166;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.menu li a:hover {
+    color: #ffd166;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("asset/JL_\ MALIOBORO.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 40px 20px;
+}
+
+
+.hero-content {
+    max-width: 800px;
+}
+
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+
+.hero h1 span {
+    color: #ffd166;
+}
+
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    background-color: #ffd166;
+    color: #333;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+
+/* ================= SECTION ================= */
+
+section {
+    padding: 70px 8%;
+}
+
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.section-title h2 {
+    font-size: 35px;
+    color: #0b6e4f;
+    margin-bottom: 10px;
+}
+
+
+.section-title p {
+    color: #666;
+}
+
+
+/* ================= GALERI ================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.gallery-item {
+    height: 250px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+
+.gallery-item img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ================= VIDEO ================= */
+
+.video-section {
+    background-color: #e9f5f0;
+}
+
+
+.video-container {
+    max-width: 900px;
+
+    margin: auto;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.video-container iframe {
+    width: 100%;
+    height: 500px;
+
+    border: none;
+}
+
+
+.video-link {
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.video-link a {
+    color: #0b6e4f;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+.video-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= PAKET WISATA ================= */
+
+.packages {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.package-card {
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.package-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.package-card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+
+.package-content {
+    padding: 22px;
+}
+
+
+.package-content h3 {
+    color: #0b6e4f;
+
+    margin-bottom: 10px;
+}
+
+
+.package-content p {
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+
+.price {
+    font-size: 22px;
+
+    font-weight: bold;
+
+    color: #e76f51;
+
+    margin-bottom: 15px;
+}
+
+
+/* ================= KEUNGGULAN ================= */
+
+.features {
+    background-color: #0b6e4f;
+
+    color: white;
+}
+
+
+.features .section-title h2 {
+    color: white;
+}
+
+
+.feature-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+.feature {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 15px;
+}
+
+
+.feature .icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+
+.feature h3 {
+    margin-bottom: 10px;
+}
+
+
+/* ================= KONTAK ================= */
+
+.contact {
+    text-align: center;
+}
+
+
+.contact-box {
+    max-width: 700px;
+
+    margin: auto;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-box p {
+    margin-bottom: 15px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #063d2c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Untuk tablet */
+
+@media (max-width: 900px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .packages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .feature-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+}
+
+
+/* Untuk HP */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .menu {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .menu li a {
+        font-size: 14px;
+    }
+
+
+    .hero {
+        min-height: 80vh;
+    }
+
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+
+    .hero p {
+        font-size: 16px;
+    }
+
+
+    .gallery,
+    .packages,
+    .feature-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .video-container iframe {
+        height: 250px;
+    }
+
+
+    section {
+        padding: 50px 5%;
+    }
+
+}
